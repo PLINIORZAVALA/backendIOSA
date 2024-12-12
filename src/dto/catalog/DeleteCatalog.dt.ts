@@ -1,13 +1,3 @@
-export class DeleteCatalogDto{
-
-    idCatalog: number;
-  
-  
-    nombre: string;
-  
-  
-    descripcion: string;
-  
-    imagen: string;
-    
-  }
+export class DeleteCatalogDto {
+  idCatalog: number;
+}

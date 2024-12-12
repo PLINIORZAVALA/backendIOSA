@@ -1,0 +1,42 @@
+¡Claro! Aquí tienes algunos ejemplos de cómo podrías probar las operaciones CRUD de la entidad `Catalog` en Postman:
+
+### Crear un nuevo catálogo
+**Método:** POST  
+**URL:** `http://localhost:3000/catalog`  
+**Body (JSON):**
+```json
+{
+  "nombre": "Nuevo Catálogo",
+  "descripcion": "Descripción del nuevo catálogo",
+  "imagen": "url_de_la_imagen"
+}
+```
+
+### Obtener todos los catálogos
+**Método:** GET  
+**URL:** `http://localhost:3000/catalog`
+
+### Obtener un catálogo por ID
+**Método:** GET  
+**URL:** `http://localhost:3000/catalog/1`  
+(Cambia `1` por el ID del catálogo que deseas obtener)
+
+### Actualizar un catálogo
+**Método:** PUT  
+**URL:** `http://localhost:3000/catalog/1`  
+(Cambia `1` por el ID del catálogo que deseas actualizar)  
+**Body (JSON):**
+```json
+{
+  "nombre": "Catálogo Actualizado",
+  "descripcion": "Descripción actualizada",
+  "imagen": "nueva_url_de_la_imagen"
+}
+```
+
+### Eliminar un catálogo
+**Método:** DELETE  
+**URL:** `http://localhost:3000/catalog/1`  
+(Cambia `1` por el ID del catálogo que deseas eliminar)
+
+Con estos ejemplos, deberías poder probar todas las operaciones CRUD en Postman. ¿Hay algo más en lo que pueda ayudarte?

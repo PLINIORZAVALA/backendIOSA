@@ -1,13 +1,5 @@
-export class UpdateCatalogDto{
-
-    idCatalog: number;
-  
-  
-    nombre: string;
-  
-  
-    descripcion: string;
-  
-    imagen: string;
-    
-  }
+export class UpdateCatalogDto {
+  nombre?: string;
+  descripcion?: string;
+  imagen?: string;
+}
