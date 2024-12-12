@@ -1,0 +1,48 @@
+Para probar cada una de las rutas en Postman, puedes seguir estos ejemplos:
+
+### Crear una nueva compañía
+**Método**: POST  
+**URL**: `http://localhost:3000/company`  
+**Body** (JSON):
+```json
+{
+  "nombre": "Compañía Ejemplo",
+  "descripcion": "Descripción de la compañía",
+  "empleados": 100,
+  "proyectos": 10,
+  "experiencia": 5
+}
+```
+
+### Obtener todas las compañías
+**Método**: GET  
+**URL**: `http://localhost:3000/company`
+
+### Obtener una compañía por ID
+**Método**: GET  
+**URL**: `http://localhost:3000/company/{id}`  
+**Ejemplo**: `http://localhost:3000/company/1`
+
+### Actualizar una compañía
+**Método**: PUT  
+**URL**: `http://localhost:3000/company/{id}`  
+**Ejemplo**: `http://localhost:3000/company/1`  
+**Body** (JSON):
+```json
+{
+  "nombre": "Compañía Actualizada",
+  "descripcion": "Descripción actualizada",
+  "empleados": 150,
+  "proyectos": 15,
+  "experiencia": 10
+}
+```
+
+### Eliminar una compañía
+**Método**: DELETE  
+**URL**: `http://localhost:3000/company/{id}`  
+**Ejemplo**: `http://localhost:3000/company/1`
+
+Estos ejemplos te permitirán probar todas las rutas definidas en tu controlador `CompanyController` utilizando Postman. Asegúrate de que tu servidor NestJS esté en funcionamiento y escuchando en el puerto 3000 (o el puerto que hayas configurado).
+
+¿Hay algo más en lo que pueda asistirte?

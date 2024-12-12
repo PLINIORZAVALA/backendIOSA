@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { CompanyModule } from './modulos/company/company.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: false, // Evitar en producción, en desarrollo puedes usar true si quieres que la base se sincronice automáticamente
     }),
+    CompanyModule, 
   ],
   controllers: [AppController],
   providers: [AppService],
