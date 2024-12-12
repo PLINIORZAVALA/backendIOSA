@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Param, Delete, Put } from '@nestjs/common';
 import { CatalogService } from './catalog.service';
-import { CreateCatalogDto } from 'src/dto/catalog/createCatalog.dt';
-import { UpdateCatalogDto } from 'src/dto/catalog/updateCatalog.dt';
+import { CreateCatalogDto } from 'src/dto/catalog/createCatalog.dto';
+import { UpdateCatalogDto } from 'src/dto/catalog/updateCatalog.dto';
 
 @Controller('catalog')
 export class CatalogController {

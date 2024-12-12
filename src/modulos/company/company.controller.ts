@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Param, Delete, Put } from '@nestjs/common';
 import { CompanyService } from './company.service';
 import { CreateConpanyDto } from 'src/dto/company/createCompany.dt';
-import { UpdateCatalogDto } from 'src/dto/catalog/updateCatalog.dt';
+import { UpdateCatalogDto } from 'src/dto/catalog/updateCatalog.dto';
 
 @Controller('company')
 export class CompanyController {

@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Company } from 'src/entity/company.entity';
 import { CreateConpanyDto } from 'src/dto/company/createCompany.dt';
-import { UpdateCatalogDto } from 'src/dto/catalog/updateCatalog.dt';
+import { UpdateCatalogDto } from 'src/dto/catalog/updateCatalog.dto';
 
 @Injectable()
 export class CompanyService {

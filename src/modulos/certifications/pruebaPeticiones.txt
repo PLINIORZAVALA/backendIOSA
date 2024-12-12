@@ -1,0 +1,42 @@
+¡Claro! Aquí tienes algunos ejemplos de cómo podrías probar las operaciones CRUD de la entidad `Certificare` en Postman:
+
+### Crear una nueva certificación
+**Método:** POST  
+**URL:** `http://localhost:3000/certificare`  
+**Body (JSON):**
+```json
+{
+  "nombreCert": "Certificación ISO 9001",
+  "datosCert": "Certificación de calidad ISO 9001",
+  "imgCert": "url_de_la_imagen_iso9001"
+}
+```
+
+### Obtener todas las certificaciones
+**Método:** GET  
+**URL:** `http://localhost:3000/certificare`
+
+### Obtener una certificación por ID
+**Método:** GET  
+**URL:** `http://localhost:3000/certificare/1`  
+(Cambia `1` por el ID de la certificación que deseas obtener)
+
+### Actualizar una certificación
+**Método:** PUT  
+**URL:** `http://localhost:3000/certificare/1`  
+(Cambia `1` por el ID de la certificación que deseas actualizar)  
+**Body (JSON):**
+```json
+{
+  "nombreCert": "Certificación ISO 14001",
+  "datosCert": "Certificación de gestión ambiental ISO 14001",
+  "imgCert": "nueva_url_de_la_imagen_iso14001"
+}
+```
+
+### Eliminar una certificación
+**Método:** DELETE  
+**URL:** `http://localhost:3000/certificare/1`  
+(Cambia `1` por el ID de la certificación que deseas eliminar)
+
+Con estos ejemplos, deberías poder probar todas las operaciones CRUD en Postman. ¿Hay algo más en lo que pueda ayudarte?

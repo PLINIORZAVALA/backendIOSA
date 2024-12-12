@@ -2,8 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Catalog } from 'src/entity/catalog.entity';
-import { CreateCatalogDto } from 'src/dto/catalog/createCatalog.dt'; 
-import { UpdateCatalogDto } from 'src/dto/catalog/updateCatalog.dt';
+import { CreateCatalogDto } from 'src/dto/catalog/createCatalog.dto'; 
+import { UpdateCatalogDto } from 'src/dto/catalog/updateCatalog.dto';
 
 @Injectable()
 export class CatalogService {
