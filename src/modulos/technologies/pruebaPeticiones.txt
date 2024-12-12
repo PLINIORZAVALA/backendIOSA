@@ -1,0 +1,29 @@
+Método: POST
+URL: http://localhost:3000/technologies
+Body (JSON):
+
+{
+  "nombre": "Inteligencia Artificial",
+  "tipo": "Software",
+  "descripcion": "Tecnología de inteligencia artificial avanzada"
+}
+Obtener todas las tecnologías
+Método: GET
+URL: http://localhost:3000/technologies
+
+Obtener una tecnología por ID
+Método: GET
+URL: http://localhost:3000/technologies/1
+(Cambia 1 por el ID de la tecnología que deseas obtener)
+
+Actualizar una tecnología
+Método: PUT
+URL: http://localhost:3000/technologies/1
+(Cambia 1 por el ID de la tecnología que deseas actualizar)
+Body (JSON):
+
+{
+  "nombre": "Machine Learning",
+  "tipo": "Software",
+  "descripcion": "Tecnología de aprendizaje automático"
+}

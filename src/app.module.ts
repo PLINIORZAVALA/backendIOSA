@@ -7,6 +7,7 @@ import { CatalogModule } from './modulos/catalog/catalog.module';
 import { CertificationsModule } from './modulos/certifications/certifications.module';
 import { QuoteModule } from './modulos/quote/quote.module';
 import { ServiceModule } from './modulos/service/service.module';
+import { TechnologiesModule } from './modulos/technologies/technologies.module';
 
 @Module({
   imports: [
@@ -24,7 +25,8 @@ import { ServiceModule } from './modulos/service/service.module';
     CatalogModule,
     CertificationsModule,
     QuoteModule,
-    ServiceModule
+    ServiceModule,
+    TechnologiesModule
   ],
   controllers: [AppController],
   providers: [AppService],
