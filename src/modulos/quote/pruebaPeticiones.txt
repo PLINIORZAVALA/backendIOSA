@@ -1,0 +1,46 @@
+¡Claro! Aquí tienes algunos ejemplos de cómo podrías probar las operaciones CRUD de la entidad `Quote` en Postman:
+
+### Crear una nueva cotización
+**Método:** POST  
+**URL:** `http://localhost:3000/quote`  
+**Body (JSON):**
+```json
+{
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "tipoDePersona": "Individual",
+  "email": "juan.perez@example.com",
+  "telefono": "1234567890"
+}
+```
+
+### Obtener todas las cotizaciones
+**Método:** GET  
+**URL:** `http://localhost:3000/quote`
+
+### Obtener una cotización por ID
+**Método:** GET  
+**URL:** `http://localhost:3000/quote/1`  
+(Cambia `1` por el ID de la cotización que deseas obtener)
+
+### Actualizar una cotización
+**Método:** PUT  
+**URL:** `http://localhost:3000/quote/1`  
+(Cambia `1` por el ID de la cotización que deseas actualizar)  
+**Body (JSON):**
+```json
+{
+  "nombre": "Juan Carlos",
+  "apellido": "Pérez",
+  "tipoDePersona": "Individual",
+  "email": "juan.carlos.perez@example.com",
+  "telefono": "0987654321"
+}
+```
+
+### Eliminar una cotización
+**Método:** DELETE  
+**URL:** `http://localhost:3000/quote/1`  
+(Cambia `1` por el ID de la cotización que deseas eliminar)
+
+Con estos ejemplos, deberías poder probar todas las operaciones CRUD en Postman. ¿Hay algo más en lo que pueda ayudarte?

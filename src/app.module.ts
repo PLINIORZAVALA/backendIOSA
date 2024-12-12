@@ -5,6 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { CompanyModule } from './modulos/company/company.module';
 import { CatalogModule } from './modulos/catalog/catalog.module';
 import { CertificationsModule } from './modulos/certifications/certifications.module';
+import { QuoteModule } from './modulos/quote/quote.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { CertificationsModule } from './modulos/certifications/certifications.mo
     CompanyModule,
     CatalogModule,
     CertificationsModule,
+    QuoteModule
   ],
   controllers: [AppController],
   providers: [AppService],
