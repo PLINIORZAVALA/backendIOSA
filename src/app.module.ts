@@ -6,6 +6,7 @@ import { CompanyModule } from './modulos/company/company.module';
 import { CatalogModule } from './modulos/catalog/catalog.module';
 import { CertificationsModule } from './modulos/certifications/certifications.module';
 import { QuoteModule } from './modulos/quote/quote.module';
+import { ServiceModule } from './modulos/service/service.module';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { QuoteModule } from './modulos/quote/quote.module';
     CompanyModule,
     CatalogModule,
     CertificationsModule,
-    QuoteModule
+    QuoteModule,
+    ServiceModule
   ],
   controllers: [AppController],
   providers: [AppService],
