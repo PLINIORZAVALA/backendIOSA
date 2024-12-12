@@ -1,4 +1,4 @@
-export class updateConpanyDto {
+export class updateCompanyDto {
     idCompany: number;
   
     nombre: string;
