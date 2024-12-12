@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { hostname } from 'os';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
@@ -9,7 +8,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
-      port: 3306,
+      port: 3307,
       username: 'root',  // Asegúrate de que el usuario y la contraseña sean correctos
       password: '',      // Si tienes una contraseña, colócala aquí
       database: 'IOCSA',  // Asegúrate de que esta base de datos exista
