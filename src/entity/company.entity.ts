@@ -1,4 +1,9 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
+import { Certificare } from './certifications.entity';
+import { Tecnologia } from './technologies.entity';
+import { Service } from './service.entity';
+import { Catalog } from './catalog.entity';
+import { Quote } from './quote.entity';
 
 @Entity('company')
 export class Company {
@@ -19,4 +24,19 @@ export class Company {
 
   @Column()
   experiencia: number;
+
+  @OneToMany(() => Certificare, certificare => certificare.company)
+  certificares: Certificare[];
+
+  @OneToMany(() => Tecnologia, tecnologia => tecnologia.company)
+  tecnologias: Tecnologia[];
+
+  @OneToMany(() => Service, service => service.company)
+  services: Service[];
+
+  @OneToMany(() => Catalog, catalog => catalog.company)
+  catalogs: Catalog[];
+
+  @OneToMany(() => Quote, quote => quote.company)
+  quotes: Quote[];
 }
