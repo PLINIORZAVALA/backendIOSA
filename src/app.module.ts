@@ -13,7 +13,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       password: '',      // Si tienes una contraseña, colócala aquí
       database: 'IOCSA',  // Asegúrate de que esta base de datos exista
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true, // Evitar en producción, en desarrollo puedes usar true si quieres que la base se sincronice automáticamente
+      synchronize: false, // Evitar en producción, en desarrollo puedes usar true si quieres que la base se sincronice automáticamente
     }),
   ],
   controllers: [AppController],
