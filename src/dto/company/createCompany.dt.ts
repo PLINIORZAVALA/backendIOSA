@@ -5,6 +5,8 @@ export class CreateConpanyDto {
 
     descripcion: string;
 
+    imagen: string;
+
     empleados: number;
   
     proyectos: number;

@@ -16,6 +16,9 @@ export class Company {
   @Column({ length: 255 })
   descripcion: string;
 
+  @Column({ length: 255 })
+  imagen: string;
+
   @Column()
   empleados: number;
 
