@@ -4,6 +4,7 @@ import { Tecnologia } from './technologies.entity';
 import { Service } from './service.entity';
 import { Catalog } from './catalog.entity';
 import { Quote } from './quote.entity';
+import { PDF } from './pdf.entity';
 
 @Entity('company')
 export class Company {
@@ -42,4 +43,7 @@ export class Company {
 
   @OneToMany(() => Quote, quote => quote.company)
   quotes: Quote[];
+  
+  @OneToMany(() => PDF, pdf => pdf.company)
+  pdf: PDF[];
 }

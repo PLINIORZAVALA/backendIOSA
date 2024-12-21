@@ -7,7 +7,8 @@
 ```json
 {
   "tipo": "Consultoría",
-  "descripcion": "Servicios de consultoría empresarial"
+  "descripcion": "Servicios de consultoría empresarial",
+  "img": "img.jpg"
 }
 ```
 
